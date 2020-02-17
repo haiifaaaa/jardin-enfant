@@ -1,0 +1,45 @@
+resto_liste:
+  path:     /
+  defaults: { _controller: RestoBundle:Resto:liste }
+
+resto_resto:
+  resource: "@RestoBundle/Resources/config/routing/resto.yml"
+  prefix:   /resto
+
+resto_homepage:
+  path:     /resto
+  defaults: { _controller: RestoBundle:Resto:index }
+
+resto_json:
+  path:     /restojson
+  defaults: { _controller: RestoBundle:Resto:all }
+
+resto_jsontrend:
+  path:     /restotrend
+  defaults: { _controller: RestoBundle:Resto:trend }
+
+resto_jsonpreso:
+  path:     /restoperso
+  defaults: { _controller: RestoBundle:Resto:allPerso }
+
+resto_jsonbyid:
+  path:     /restojsonid/{id}
+  defaults: { _controller: RestoBundle:Resto:byid }
+
+resto_jsonnew:
+  path:     /restojsonnew
+  defaults: { _controller: RestoBundle:Resto:new }
+
+resto_jsondelete:
+  path:     /restojsondelete/{id}
+  defaults: { _controller: RestoBundle:Resto:delete }
+
+
+
+image_json:
+  path:     /imageupload
+  defaults: { _controller: RestoBundle:Resto:uploadImage }
+
+new_user:
+  path:     /newuser
+  defaults: { _controller: RestoBundle:Resto:newUser }

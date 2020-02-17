@@ -1,3 +1,41 @@
 resto_liste:
     path:     /
     defaults: { _controller: RestoBundle:Resto:liste }
+
+resto_index:
+    path:     /
+    defaults: { _controller: RestoBundle:Resto:index }
+    methods:  GET
+
+resto_show:
+    path:     /{idResto}/show
+    defaults: { _controller: RestoBundle:Resto:show }
+    methods:  [GET, POST]
+
+resto_new:
+    path:     /new
+    defaults: { _controller: RestoBundle:Resto:new }
+    methods:  [GET, POST]
+
+resto_edit:
+    path:     /{idResto}/edit
+    defaults: { _controller: RestoBundle:Resto:edit }
+    methods:  [GET, POST]
+
+resto_delete:
+    path:     /{idResto}/delete
+    defaults: { _controller: RestoBundle:Resto:delete }
+    methods:  [GET, POST]
+
+recherche_resto:
+    path:     /chercher
+    defaults: { _controller: RestoBundle:Resto:chercher }
+
+chart_resto:
+    path:     /chart
+    defaults: { _controller: RestoBundle:Resto:chart }
+
+pdf:
+    path:     /pdf
+    defaults: { _controller: RestoBundle:Resto:pdf }
+
